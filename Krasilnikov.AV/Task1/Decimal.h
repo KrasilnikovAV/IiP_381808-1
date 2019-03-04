@@ -10,11 +10,11 @@ private:
 public:
 	Decimal();
 	~Decimal();
-	Decimal& operator= (const Decimal d);
+	Decimal& operator= (const Decimal& d);
 	Decimal& operator= (const unsigned long long n);
-	Decimal operator+ (const Decimal d);
+	Decimal operator+ (const Decimal& d);
 	Decimal operator+ (const unsigned long long n);
-	Decimal operator- (const Decimal d);
+	Decimal operator- (const Decimal& d);
 	bool operator> (const Decimal& d);
 	bool operator< (const Decimal& d);
 	bool operator== (const Decimal& d);

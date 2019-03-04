@@ -18,7 +18,7 @@ Decimal::~Decimal()
 	num.shrink_to_fit();
 }
 
-Decimal & Decimal::operator=(const Decimal d)
+Decimal & Decimal::operator=(const Decimal& d)
 {
 	num.resize(d.num.size());
 	for (int i = 0; i < num.size(); i++) {
@@ -40,7 +40,7 @@ Decimal & Decimal::operator=(const unsigned long long n)
 	return *this;
 }
 
-Decimal Decimal::operator+(const Decimal d)
+Decimal Decimal::operator+(const Decimal& d)
 {
 	int ost = 0, i;
 	Decimal res1;
@@ -103,7 +103,7 @@ Decimal Decimal::operator+(const unsigned long long n)
 	return (*this) + d;
 }
 
-Decimal Decimal::operator-(const Decimal d)
+Decimal Decimal::operator-(const Decimal& d)
 {
 	int ost = 0, i;
 	Decimal res1;
