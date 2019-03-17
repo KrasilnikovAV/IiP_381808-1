@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <clocale>
 #include "Calendar.h"
 
@@ -7,12 +7,12 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	Calendar cal(1, 9, 1939, "Начало Второй мировой войны");	// Sozdaiom kalendar
-	cal.add(2, 9, 1945, "Конец Второй мировой войны");			// Dobavlaem sobitie
+	Calendar cal(30);	// Sozdaiom kalendar
+	cal.add(2, 9, 1945, "РљРѕРЅРµС† Р’С‚РѕСЂРѕР№ РјРёСЂРѕРІРѕР№ РІРѕР№РЅС‹");			// Dobavlaem sobitie
 	cout << cal << endl;										// Vivodim calendar
-	cout << cal.getDate("Конец Второй мировой войны") << endl;	// Vivodim daty opredelennogo sobitiya
-	cout << cal.getDifference(17, 03, 2019, "Конец Второй мировой войны");	// Vivodim raznicy megdy datoi i sobitiem
-	cal.dateShift("Начало Второй мировой войны", 2192);			// Sdvigem sobitie
+	cout << cal.getDate("РљРѕРЅРµС† Р’С‚РѕСЂРѕР№ РјРёСЂРѕРІРѕР№ РІРѕР№РЅС‹") << endl;	// Vivodim daty opredelennogo sobitiya
+	cout << cal.getDifference(17, 03, 2019, "РљРѕРЅРµС† Р’С‚РѕСЂРѕР№ РјРёСЂРѕРІРѕР№ РІРѕР№РЅС‹");	// Vivodim raznicy megdy datoi i sobitiem
+	cal.dateShift("РќР°С‡Р°Р»Рѕ Р’С‚РѕСЂРѕР№ РјРёСЂРѕРІРѕР№ РІРѕР№РЅС‹", 2192);			// Sdvigem sobitie
 	cout << cal << endl;
 	getchar();
 	return 0;

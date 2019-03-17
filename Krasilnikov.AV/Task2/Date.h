@@ -25,3 +25,4 @@ public:
 	friend ostream & operator<< (ostream & out, const Date & d);
 	friend istream & operator>> (istream & in, Date & d);
 };
+
