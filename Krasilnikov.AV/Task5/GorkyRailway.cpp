@@ -1,8 +1,8 @@
 #include "GorkyRailway.h"
 
 
-// Функция проверки занятости места
-// Возращает 1, если место свободно и 0 если занято или введены неверные данные
+// Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё Р·Р°РЅСЏС‚РѕСЃС‚Рё РјРµСЃС‚Р°
+// Р’РѕР·СЂР°С‰Р°РµС‚ 1, РµСЃР»Рё РјРµСЃС‚Рѕ СЃРІРѕР±РѕРґРЅРѕ Рё 0 РµСЃР»Рё Р·Р°РЅСЏС‚Рѕ РёР»Рё РІРІРµРґРµРЅС‹ РЅРµРІРµСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ
 bool GorkyRailway::Check_private(int day, int direction, int type_wagon, int wagon, int place, int type_place)
 {
 	if (type_place == 1) {
@@ -88,7 +88,7 @@ bool GorkyRailway::Check_private(int day, int direction, int type_wagon, int wag
 	}
 }
 
-// Метод брони беста
+// РњРµС‚РѕРґ Р±СЂРѕРЅРё Р±РµСЃС‚Р°
 void GorkyRailway::Set_private(int day, int direction, int type_wagon, int wagon, int place, int type_place)
 {
 	if (type_place == 1) {

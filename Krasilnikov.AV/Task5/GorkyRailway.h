@@ -3,24 +3,24 @@
 class GorkyRailway
 {
 private:
-	// Здесь храниться информация о занятых местах
-	bool private_lastsochka[31][2][8][100] = { 0 }; // Индексы означают: День, направление, вагон, место.
+	// В«РґРµСЃСЊ С…СЂР°РЅРёС‚СЊСЃВ¤ РёРЅС„РѕСЂРјР°С†РёВ¤ Рѕ Р·Р°РЅВ¤С‚С‹С… РјРµСЃС‚Р°С…
+	bool private_lastsochka[31][2][8][100] = { 0 }; // В»РЅРґРµРєСЃС‹ РѕР·РЅР°С‡Р°СЋС‚: Ж’РµРЅСЊ, РЅР°РїСЂР°РІР»РµРЅРёРµ, РІР°РіРѕРЅ, РјРµСЃС‚Рѕ.
 	bool private_firmeniy_plac[31][2][4][54] = { 0 };
 	bool private_firmeniy_kupe[31][2][6][36] = { 0 };
 	bool private_firmeniy_sv[31][2][2][18] = { 0 };
 	bool private_skoriy_plac[31][2][4][54] = { 0 };
 	bool private_skoriy_kupe[31][2][8][36] = { 0 };
 public:
-	// Цены билетов
+	// Г·РµРЅС‹ Р±РёР»РµС‚РѕРІ
 	const unsigned int lastsochka_price = 100;
 	const unsigned int firmeniy_plac_price = 200;
 	const unsigned int firmeniy_kupe_price = 300;
 	const unsigned int firmeniy_sv_price = 250;
 	const unsigned int skoriy_plac_price = 150;
 	const unsigned int skoriy_kupe_price = 200;
-	// Функция проверки занятости места
+	// вЂСѓРЅРєС†РёВ¤ РїСЂРѕРІРµСЂРєРё Р·Р°РЅВ¤С‚РѕСЃС‚Рё РјРµСЃС‚Р°
 	bool Check_private(int day, int direction, int type_wagon, int wagon, int place, int type_place);
-	// Метод брони беста
+	// С›РµС‚РѕРґ Р±СЂРѕРЅРё Р±РµСЃС‚Р°
 	void Set_private(int day, int direction, int type_wagon, int wagon, int place, int type_place);
 	GorkyRailway();
 	~GorkyRailway();
