@@ -1,4 +1,4 @@
-#include "GorkyRailway.h"
+﻿#include "GorkyRailway.h"
 
 
 // Функция проверки занятости места

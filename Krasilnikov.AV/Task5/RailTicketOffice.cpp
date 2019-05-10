@@ -1,4 +1,4 @@
-#include "RailTicketOffice.h"
+﻿#include "RailTicketOffice.h"
 
 
 // ‘ункци¤ принимает заказ мест и возвращает 1, если данные введены верно.
