@@ -8,7 +8,7 @@ int main() {
 	Field F_other;
 	F_other.Add_random();
 	int way = -1, a, end;
-	cout << "Äîáðî ïîæàëîàòü â Ìîðñêîé áîé!" << endl;
+	cout << "Ð”Ð¾Ð±Ñ€Ð¾ Ð¿Ð¾Ð¶Ð°Ð»Ð¾Ð°Ñ‚ÑŒ Ð² ÐœÐ¾Ñ€ÑÐºÐ¾Ð¹ Ð±Ð¾Ð¹!" << endl;
 	system("pause");
 	F_my.Add_random();
 	way = 1;
@@ -19,32 +19,32 @@ int main() {
 			while (end == 0) {
 				F_my.Print();
 				cout << endl;
-				cout << "Âàø õîä, ââåäèòå öåëü â ôîðìàòå ÁÖ(Áóêâà, öèôðà): ";
+				cout << "Ð’Ð°Ñˆ Ñ…Ð¾Ð´, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»ÑŒ Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ Ð‘Ð¦(Ð‘ÑƒÐºÐ²Ð°, Ñ†Ð¸Ñ„Ñ€Ð°): ";
 				cin >> aim1 >> aim2;
 				a = F_my.Shot(aim2 - 48, aim1 - 65, F_other);
 				if (a == -2) {
-					cout << "Íåâåðíûå äàííûå!" << endl;
+					cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ!" << endl;
 					system("pause");
 					continue;
 				}
 				if (a == -1) {
-					cout << "Ñþäà íå èìååò ñìûñëà áèòü!" << endl;
+					cout << "Ð¡ÑŽÐ´Ð° Ð½Ðµ Ð¸Ð¼ÐµÐµÑ‚ ÑÐ¼Ñ‹ÑÐ»Ð° Ð±Ð¸Ñ‚ÑŒ!" << endl;
 					system("pause");
 					continue;
 				}
 				if (a == 0) {
-					cout << "Ìèìî!" << endl;
+					cout << "ÐœÐ¸Ð¼Ð¾!" << endl;
 					system("pause");
 					end = 1;
 					continue;
 				}
 				if (a == 1) {
-					cout << "Ðàíèë!" << endl;
+					cout << "Ð Ð°Ð½Ð¸Ð»!" << endl;
 					system("pause");
 					continue;
 				}
 				if (a == 2) {
-					cout << "Óáèë" << endl;
+					cout << "Ð£Ð±Ð¸Ð»" << endl;
 					system("pause");
 					continue;
 				}
@@ -57,16 +57,16 @@ int main() {
 			} while (a != 0);
 			way = 1;
 			F_my.Print();
-			cout << "Âðàã ñõîäèë." << endl;
+			cout << "Ð’Ñ€Ð°Ð³ ÑÑ…Ð¾Ð´Ð¸Ð»." << endl;
 			system("pause");
 		}
 	}
 	system("cls");
 	if (F_my.Check_lose() == 1) {
-		cout << "Âû ïðîèãðàëè!!!" << endl;
+		cout << "Ð’Ñ‹ Ð¿Ñ€Ð¾Ð¸Ð³Ñ€Ð°Ð»Ð¸!!!" << endl;
 	}
 	else {
-		cout << "Âû âûéãðàëè!!!" << endl;
+		cout << "Ð’Ñ‹ Ð²Ñ‹Ð¹Ð³Ñ€Ð°Ð»Ð¸!!!" << endl;
 	}
 	system("pause");
 	return 0;
