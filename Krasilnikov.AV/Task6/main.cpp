@@ -8,18 +8,9 @@ int main() {
 	Field F_other;
 	F_other.Add_random();
 	int way = -1, a, end;
-	while (way < 0 || way > 1) {
-		cout << "Добро пожалоать в Морской бой!" << endl;
-		cout << "Выберите вариант расстановки ваших кораблей" << endl;
-		cout << "(0 - автоматически, 1 - самостоятельно): ";
-		cin >> way;
-	}
-	if (way == 0) {
-		F_my.Add_random();
-	}
-	else {
-
-	}
+	cout << "Добро пожалоать в Морской бой!" << endl;
+	system("pause");
+	F_my.Add_random();
 	way = 1;
 	char aim1, aim2;
 	while (F_my.Check_lose() == 0 && F_other.Check_lose() == 0) {

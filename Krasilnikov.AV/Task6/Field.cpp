@@ -14,9 +14,12 @@ void Field::Print_kill_me(int x, int y, int xp, int yp)
 				}
 			}
 			else {
-				my_field[x + dx + 1][y + dy + 1] = '*';
+				if ((x + dx != xp || y + dy != yp) && (dx != 0 || dy != 0)) {
+					my_field[x + dx + 1][y + dy + 1] = '*';
+				}
 			}
 		}
+	my_field[x + 1][y + 1] = -3;
 	setlocale(LC_ALL, "Russian");
 }
 
@@ -32,9 +35,12 @@ void Field::Print_kill_other(int x, int y, int xp, int yp)
 				}
 			}
 			else {
-				other_field[x + dx + 1][y + dy + 1] = '*';
+				if ((x + dx != xp || y + dy != yp) && (dx != 0 || dy != 0)) {
+					other_field[x + dx + 1][y + dy + 1] = '*';
+				}
 			}
 		}
+	other_field[x + 1][y + 1] = -3;
 	setlocale(LC_ALL, "Russian");
 }
 
